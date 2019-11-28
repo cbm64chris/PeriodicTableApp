@@ -62,6 +62,42 @@ public enum Elements {
         public String getDescription() {
             return getDescriptionFromWiki(Fluorine.elementName).get();
         }
+    },
+    Neon(10, 20.180, "Ne", "Neon", 18, 2, Type.NobleGas) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Neon.elementName).get();
+        }
+    },
+    Sodium(11, 22.990, "Na", "Sodium", 1, 3, Type.AlkaliMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Sodium.elementName).get();
+        }
+    },
+    Magnesium(12, 24.305, "Mg", "Magnesium", 2, 3, Type.AlkalineEarthMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Magnesium.elementName).get();
+        }
+    },
+    Aluminium(13, 26.982, "Ai", "Aluminium", 13, 3, Type.PostTtransitionMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Aluminium.elementName).get();
+        }
+    },
+    Silicon(14, 28.085, "Si", "Silicon", 14, 3, Type.Metaloid) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Silicon.elementName).get();
+        }
+    },
+    Phosphorus(15, 30.974, "P", "Phosphorus", 15, 3, Type.ReactiveNonmetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Phosphorus.elementName).get();
+        }
     };
 
     private final int atomicNumber;
@@ -114,7 +150,7 @@ public enum Elements {
 
     private static Optional<String> getDescriptionFromWiki(String elementName) {
         try {
-            URL encodedStr = new URL("https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&titles="+elementName+"&redirects=true");
+            URL encodedStr = new URL("https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&titles=" + elementName + "&redirects=true");
             JSONObject jsonObject = new JSONObject(new JSONTokener(encodedStr.openStream()));
             JSONObject obj = jsonObject.getJSONObject("query").getJSONObject("pages");
             return Optional.of(obj.getJSONObject(obj.keySet().stream().findFirst().get()).getString("extract"));

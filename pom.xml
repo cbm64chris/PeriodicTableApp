@@ -4,6 +4,18 @@
     <groupId>com.fluffy.luffs</groupId>
     <artifactId>periodic-table-app</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    
+    <developers>
+        <developer>
+            <name>George Luff</name>
+        </developer>
+        <developer>
+            <name>Chris Luff</name>
+            <id>cbm64chris</id>
+            <email>chris1976@me.com</email>
+        </developer>
+    </developers>
+    
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mainClass>com.fluffy.luffs.periodic.table.app.App</mainClass>
