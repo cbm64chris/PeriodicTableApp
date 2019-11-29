@@ -98,6 +98,30 @@ public enum Elements {
         public String getDescription() {
             return getDescriptionFromWiki(Phosphorus.elementName).get();
         }
+    },
+    Sulfur(16, 32.06, "S", "Sulfur", 16, 3, Type.ReactiveNonmetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Sulfur.elementName).get();
+        }
+    },
+    Chlorine(17, 35.45, "Ci", "Chlorine", 17, 3, Type.ReactiveNonmetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Chlorine.elementName).get();
+        }
+    },
+    Argon(18, 39.95, "Ar", "Argon", 18, 3, Type.NobleGas) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Argon.elementName).get();
+        }
+    },
+    Potassium(19, 39.098, "k", "Potassium", 1, 4, Type.AlkaliMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Potassium.elementName).get();
+        }
     };
 
     private final int atomicNumber;
