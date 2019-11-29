@@ -122,6 +122,96 @@ public enum Elements {
         public String getDescription() {
             return getDescriptionFromWiki(Potassium.elementName).get();
         }
+    },
+    Calcium(20, 40.078, "Ca", "Calcium", 2, 4, Type.AlkalineEarthMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Calcium.elementName).get();
+        }
+    },
+    Scandium(21, 44.956, "Sc", "Scandium", 3, 4, Type.TransitionMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Scandium.elementName).get();
+        }
+    },
+    Titanium(22, 47.867, "Ti", "Titanium", 4, 4, Type.TransitionMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Titanium.elementName).get();
+        }
+    },
+    Vanadium(23, 50.942, "V", "Vanadium", 5, 4, Type.TransitionMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Vanadium.elementName).get();
+        }
+    },
+    Chromium(24, 51.996, "Cr", "Chromium", 6, 4, Type.TransitionMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Chromium.elementName).get();
+        }
+    },
+    Manganese(25, 54.938, "Mn", "Manganese", 7, 4, Type.TransitionMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Manganese.elementName).get();
+        }
+    },
+    Iron(26, 55.845, "Fe", "Iron", 8, 4, Type.TransitionMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Iron.elementName).get();
+        }
+    },
+    Cobalt(27, 58.933, "Co", "Cobalt", 9, 4, Type.TransitionMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Cobalt.elementName).get();
+        }
+    },
+    Copper(28, 63.546, "Cu", "Copper", 10, 4, Type.TransitionMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Copper.elementName).get();
+        }
+    },
+    Zinc(29, 65.38, "Zn", "Zinc", 11, 4, Type.PostTtransitionMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Zinc.elementName).get();
+        }
+    },
+    Gallium(30, 69.723, "Ga", "Gallium", 12, 4, Type.PostTtransitionMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Gallium.elementName).get();
+        }
+    },
+    Germanium(31, 72.630, "Ge", "Germanium", 13, 4, Type.Metaloid) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Germanium.elementName).get();
+        }
+    },
+    Arsenic(32, 74.922, "As", "Arsenic", 14, 4, Type.Metaloid) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Arsenic.elementName).get();
+        }
+    },
+    Selenium(33, 78.971, "Se", "Selenium", 15, 4, Type.ReactiveNonmetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Selenium.elementName).get();
+        }
+    },
+    Nickel(28, 58.693, "Ni", "Nickel", 15, 4, Type.TransitionMetal) {
+        @Override
+        public String getDescription() {
+            return getDescriptionFromWiki(Nickel.elementName).get();
+        }
     };
 
     private final int atomicNumber;
