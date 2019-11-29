@@ -8,6 +8,7 @@ import java.util.function.Predicate;
 import java.util.stream.IntStream;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
@@ -35,6 +36,7 @@ public class HomeController implements Initializable {
                             .ifPresentOrElse(
                                     (element) -> {
                                         Button elementButton = constructElement(element);
+                                        elementButton.alignmentProperty().set(Pos.CENTER);
                                         GridPane.setConstraints(elementButton, column, row);
                                         table.getChildren().add(elementButton);
                                         System.out.println("Adding " + element.getElementName() + " at " + row + "," + column);
@@ -51,7 +53,7 @@ public class HomeController implements Initializable {
     }
 
     private Button constructElement(Elements element) {
-        Label atomicMass = new Label(String.valueOf(element.getAtomicMass()));
+        Label atomicMass = new Label(String.format("%.2f", element.getAtomicMass()));
         Label atomicNumber = new Label(String.valueOf(element.getAtomicNumber()));
         Label elementName = new Label(element.getElementName());
         return new Button("", new VBox(elementName, atomicNumber, atomicMass));
